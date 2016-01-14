@@ -1,5 +1,5 @@
 {
-  "name": "react-portal-tooltip",
+  "name": "@weflex/react-portal-tooltip",
   "version": "1.0.0",
   "description": "Awesome React tooltips",
   "main": "lib/index.js",

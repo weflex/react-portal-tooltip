@@ -8,7 +8,7 @@ Awesome tooltips.
 
 ## Installation
 
-    $ npm install react-portal-tooltip
+    $ npm install @weflex/react-portal-tooltip --save
 
 ## Documentation and demo
 

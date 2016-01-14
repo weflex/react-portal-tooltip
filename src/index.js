@@ -55,14 +55,12 @@ class Card extends React.Component {
       visibility: this.state.hover || this.props.active ? 'visible' : 'hidden',
       zIndex: 50
     }
-    console.log(style);
 
     assign(style, this.getStyle(this.props.position, this.props.arrow))
 
     return this.mergeStyle(style, this.props.style.style)
   }
   get baseArrowStyle() {
-    console.log(this.props.transition);
     return {
       position: 'absolute',
       content: '""',

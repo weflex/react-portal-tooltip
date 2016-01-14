@@ -44,27 +44,30 @@ class Card extends React.Component {
       return {display: 'none'}
     }
 
+    console.log(this.props.transition);
     let style = {
       position: 'absolute',
       padding: '5px',
       background: '#fff',
       boxShadow: '0 0 8px rgba(0,0,0,.3)',
       borderRadius: '3px',
-      transition: `${this.state.transition} .3s ease-in-out, visibility .3s ease-in-out`,
+      transition: `${this.state.transition} ${this.props.transition}s ease-in-out, visibility ${this.props.transition}s ease-in-out`,
       opacity: this.state.hover || this.props.active ? 1 : 0,
       visibility: this.state.hover || this.props.active ? 'visible' : 'hidden',
       zIndex: 50
     }
+    console.log(style);
 
     assign(style, this.getStyle(this.props.position, this.props.arrow))
 
     return this.mergeStyle(style, this.props.style.style)
   }
   get baseArrowStyle() {
+    console.log(this.props.transition);
     return {
       position: 'absolute',
       content: '""',
-      transition: 'all .3s ease-in-out'
+      transition: `all ${this.props.transition}s ease-in-out`
     }
   }
   get arrowStyle() {

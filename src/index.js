@@ -44,7 +44,6 @@ class Card extends React.Component {
       return {display: 'none'}
     }
 
-    console.log(this.props.transition);
     let style = {
       position: 'absolute',
       padding: '5px',

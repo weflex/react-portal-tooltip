@@ -54,6 +54,7 @@ class MyComponent extends React.Component {
 * `parent`: the tooltip will be placed next to this element
 * `group`: string, necessary if you want several independant tooltips
 * `style`: object, allows customizing the tooltip. Checkout the [example](https://github.com/romainberger/react-portal-tooltip/blob/master/example/src/style.js) for details.
+* `transition`: number, set transition duration
 
 ## Development
 

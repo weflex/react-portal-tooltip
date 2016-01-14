@@ -25,6 +25,9 @@
     "portal"
   ],
   "author": "Romain Berger <romain@romainberger.com>",
+  "contributors": [
+    "jkvim <jkvim@outlook.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "is-client": "0.0.2",
